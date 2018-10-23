@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Bus from "./Bus/Bus"
+import Bus from "./Bus/Bus";
 import "./App.css";
 
 class App extends Component {
@@ -39,11 +39,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.recentBuses.map(bus => {
-          return (
-            <Bus headsign={bus.headsign} routeId={bus.routeId} estimatedTime={bus.estimatedTime} />
-          );
-        })}
+          {this.state.recentBuses.map(bus => {
+            return (
+              <Bus
+                headsign={bus.headsign}
+                routeId={bus.routeId}
+                estimatedTime={bus.estimatedTime}
+              />
+            );
+          })}
       </div>
     );
   }

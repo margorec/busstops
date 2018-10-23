@@ -5,3 +5,15 @@
     padding: 16px;
     
 }
+
+.RouteId {
+    width: 30px;
+}
+
+.Headsign {
+    width: 200px;
+}
+
+.TimeToGo {
+    width: 200px;
+}
